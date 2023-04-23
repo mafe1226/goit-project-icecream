@@ -1,8 +1,4 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-* {
-  padding: 0;
-  margin: 0;
-}
 ​body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
@@ -16,7 +12,7 @@
 body h2,
 body h3 {
   color: $title-text-color;
-  font-family: 'Titan One', Impact;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   text-align: center;
 }
@@ -46,8 +42,10 @@ a {
 }
 ​.container {
   width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 ​.section {
-  padding: 60px 16;
+  padding: 60px 16px;
 }
