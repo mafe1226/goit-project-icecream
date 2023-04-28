@@ -1,20 +1,5 @@
 @import './common';
 
-:root {
-  --primary-text-color: #{$primary-text-color};
-  --secondary-text-color: #{$secondary-text-color};
-  --tertiary-text-color: #{$tertiary-text-color};
-  --quaternary-text-color: #{$quaternary-text-color};
-  --title-text-color: #{$title-text-color};
-  --title-secondary-text-color: #{$title-secondary-text-color};
-  --accent-color: #{$accent-color};
-  --hero-bg-color: #{$hero-bg-color};
-  --primary-bg-color: #{$primary-bg-color};
-  --secondary-bg-color: #{$secondary-bg-color};
-  --icon-color: #{$icon-color};
-  --sm-icon-bg-color: #{$sm-icon-bg-color};
-}
-
 footer {
   width: 100%;
   height: 480px;
@@ -34,6 +19,7 @@ footer {
     line-height: 21px;
     text-transform: uppercase;
     color: #ffa5ba;
+    text-align: left;
   }
 
   .footer_title_2 {
@@ -50,6 +36,7 @@ footer {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    justify-content: left;
   }
 
   .redes {
