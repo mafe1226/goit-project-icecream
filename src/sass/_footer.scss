@@ -1,4 +1,5 @@
 @import './common';
+@import './utils/varibles';
 
 footer {
   width: 100%;
@@ -44,14 +45,20 @@ footer {
     display: flex;
     position: absolute;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 25px;
     bottom: 149px;
     list-style: none;
     width: 154px;
     height: 32px;
     right: 20px;
     margin-top: 40px;
+  }
 
+ .redes_red {
+color: currentColor;
+    &:hover {
+      fill: red;
+    }
   }
 
   .contact {
