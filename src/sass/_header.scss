@@ -1,0 +1,327 @@
+.header {
+  width: 1200px;
+  height: 640px;
+  position: relative;
+  background: linear-gradient(150deg, #ffb8ca, #ae586e, #a33752);
+  background-size: 400% 300%;
+  animation: fondo 5s ease-in infinite alternate-reverse;
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+}
+@keyframes fondo {
+  0% {
+    background-color: #ffb8ca;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-color: #ae586e;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-color: #a33752;
+  }
+}
+
+.header__nav {
+  .header__menu {
+    width: 540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  .header__menu--item {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    color: $secondary-text-color;
+    &:hover {
+      color: $title-text-color;
+    }
+  }
+  .header__menu--button {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    width: 159px;
+    height: 44px;
+    border-radius: 22px;
+    border-color: transparent;
+    cursor: pointer;
+    &:hover {
+      color: $title-text-color;
+      background-color: $primary-bg-color;
+    }
+  }
+}
+.header__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 25px;
+  .header__tittle {
+    width: 277px;
+    height: 137px;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 700px;
+    color: $secondary-text-color;
+  }
+  .header__tittle--pink {
+    color: $title-text-color;
+    font-size: 58px;
+  }
+  .header__button {
+    display: flex;
+    gap: 15px;
+    padding-left: 16px;
+  }
+  .header__text {
+    width: 200px;
+    height: 78px;
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $secondary-text-color;
+  }
+}
+
+.header__button {
+  .header__tittle--button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 107px;
+    height: 40px;
+  }
+  .header__button--gray {
+    color: $title-text-color;
+    background-color: $secondary-text-color;
+    width: 138px;
+    height: 40px;
+    cursor: pointer;
+    &:hover {
+      color: $title-text-color;
+      background-color: $primary-bg-color;
+    }
+  }
+
+  .header__button--pink {
+    color: $secondary-text-color;
+    background-color: $title-text-color;
+    cursor: pointer;
+  }
+}
+
+.header__main__items {
+  height: 280px;
+  padding-top: 40px;
+  z-index: 11;
+  .header__item {
+    height: 110px;
+  }
+}
+.header__item {
+  .header__number {
+    color: $accent-color;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .header__span {
+    width: 35px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: DM Sans;
+    color: $secondary-text-color;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.header__generics {
+  .header__circle__pink {
+    position: absolute;
+    top: 54px;
+    left: 500px;
+    z-index: 1;
+  }
+  .header__circle__first {
+    fill: #ffffff;
+    position: absolute;
+    top: 144px;
+    right: 16px;
+  }
+  .header__circle__second {
+    fill: #ffffff;
+    position: absolute;
+    top: 250px;
+    right: 16px;
+  }
+  .header__cream {
+    background-image: url('../images/cream.png');
+    width: 236px;
+    height: 557px;
+    top: 80px;
+    left: 620px;
+    position: absolute;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .header__milk {
+    background-image: url('../images/milk.png');
+    width: 213px;
+    height: 216px;
+    top: 380px;
+    left: 20px;
+    position: absolute;
+    animation: fondo;
+    z-index: 2;
+  }
+  .header__woman {
+    background-image: url('../images/women-cream.png');
+    width: 304px;
+    height: 231px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 10;
+    animation: fondo;
+  }
+  .header__arrow {
+    background-image: url('../images/arrow.png');
+    width: 26px;
+    height: 26px;
+    bottom: 80px;
+    left: 250px;
+    position: absolute;
+    animation: fondo;
+  }
+}
+
+.header__circles {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 120px;
+  z-index: 0;
+  .header__circle {
+    fill: rgba(256, 256, 256, 0.5);
+  }
+}
+.header__circle {
+  .header__circle__one {
+    position: absolute;
+    left: 0px;
+    animation: animarcircles 6s linear 1200ms infinite;
+  }
+  .header__circle__two {
+    position: absolute;
+    left: 130px;
+    animation: animarcircles 8s linear 1200ms infinite;
+  }
+  .header__circle__three {
+    position: absolute;
+    left: 180px;
+    animation: animarcircles 5s linear 1200ms infinite;
+  }
+  .header__circle__four {
+    position: absolute;
+    left: 220px;
+    animation: animarcircles 7s linear 1200ms infinite;
+  }
+  .header__circle__five {
+    position: absolute;
+    left: 360px;
+    animation: animarcircles 6s linear 1200ms infinite;
+  }
+  .header__circle__six {
+    position: absolute;
+    left: 400px;
+    animation: animarcircles 7s linear 1200ms infinite;
+  }
+  .header__circle__seven {
+    position: absolute;
+    left: 600px;
+    animation: animarcircles 5s linear 1200ms infinite;
+  }
+  .header__circle__eight {
+    position: absolute;
+    left: 690px;
+    animation: animarcircles 6s linear 1200ms infinite;
+  }
+  .header__circle__nine {
+    position: absolute;
+    left: 740px;
+    animation: animarcircles 7s linear 1200ms infinite;
+  }
+  .header__circle__ten {
+    position: absolute;
+    left: 900px;
+    animation: animarcircles 5s linear 1200ms infinite;
+  }
+  .header__circle__eleven {
+    position: absolute;
+    left: 1000px;
+    animation: animarcircles 6s linear 1200ms infinite;
+  }
+  .header__circle__twelve {
+    position: absolute;
+    left: 1090px;
+    animation: animarcircles 8s linear 1200ms infinite;
+  }
+  .header__circle__thirteen {
+    position: absolute;
+    left: 1140px;
+    animation: animarcircles 7s linear 1200ms infinite;
+  }
+  .header__circle__fourteen {
+    position: absolute;
+    left: 750px;
+    animation: animarcircles 11s linear 1200ms infinite;
+  }
+  .header__circle__fifteen {
+    position: absolute;
+    left: 1000px;
+    animation: animarcircles 11s linear 1200ms infinite;
+  }
+  .header__circle__sixteen {
+    position: absolute;
+    left: 250px;
+    animation: animarcircles 11s linear 1200ms infinite;
+  }
+}
+@keyframes animarcircles {
+  0% {
+    transform: translateY(200px);
+  }
+  20% {
+    margin-left: 40px;
+  }
+  60% {
+    margin-right: 90px;
+  }
+  100% {
+    transform: translateY(-700px);
+  }
+}
