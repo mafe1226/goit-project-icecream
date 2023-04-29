@@ -55,10 +55,6 @@ footer {
     margin-top: 40px;
   }
 
-  .casa {
-    color: currentColor;
-    fill:blue;
-  }
 
 
   .contact {
@@ -82,16 +78,13 @@ footer {
     }
 
     .contact_number {
-      color: #d41443;
+      color: blue;
       margin-left: 3px;
     }
   }
   .redes_red {
-    fill:blue;
+    background-color:blue;
   }
-  svg {
-    fill: currentColor;
-}
   .line {
     position: absolute;
     width: 320px;
