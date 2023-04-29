@@ -6,6 +6,7 @@ footer {
   position: relative;
   background: #fff5f6;
 
+
   .footer_title {
     position: absolute;
     width: 232px;
@@ -16,7 +17,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: #ffa5ba;
     text-align: left;
@@ -32,11 +33,11 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
-    justify-content: left;
+ text-align: left;
   }
 
   .redes {
@@ -49,13 +50,8 @@ footer {
     width: 154px;
     height: 32px;
     right: 20px;
-    padding: 0;
     margin-top: 40px;
 
-    svg {
-      width: 32px;
-      height: 32px;
-    }
   }
 
   .contact {
@@ -70,9 +66,8 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.14;
     justify-content: right;
-    padding: 0;
     margin-top: 40px;
 
     .contact_us {
@@ -102,12 +97,11 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 152%;
+    line-height: 1.14;
     text-align: center;
     color: #907e82;
     bottom: 3px;
     list-style: none;
-    padding: 0;
   }
 
   @media screen and (min-width: 700px) {
@@ -125,7 +119,7 @@ footer {
       bottom: 2px;
       display: flex;
       height: 20px;
-      margin: 0;
+
       justify-content: center;
     }
 
@@ -162,29 +156,24 @@ footer {
       height: 34px;
       bottom: 179px;
       font-size: 30px;
-      line-height: 34px;
-      letter-spacing: 0.04em;
+      line-height: 1.14;
     }
 
     .footer_title_2 {
       width: 480px;
       height: 66px;
       font-size: 58px;
-      line-height: 66px;
+      line-height: 1.14;
       letter-spacing: 0.06em;
     }
 
     .contact {
       width: 719px;
       height: 30px;
-      font-size: 16px;
       bottom: 97px;
     }
 
-    svg {
-      width: 34px;
-      height: 34px;
-    }
+
 
     .redes {
       flex-wrap: wrap;
