@@ -54,6 +54,10 @@ footer {
     right: 20px;
     margin-top: 40px;
   }
+  .redes_red {
+    background-color:blue;
+    border-radius: 50%;
+  }
 
 
 
@@ -78,13 +82,11 @@ footer {
     }
 
     .contact_number {
-      color: blue;
+      color: #d41443;
       margin-left: 3px;
     }
   }
-  .redes_red {
-    background-color:blue;
-  }
+
   .line {
     position: absolute;
     width: 320px;
