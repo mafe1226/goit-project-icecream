@@ -1,0 +1,136 @@
+
+.tradition{
+    background-image: url('../images/sectionbg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__subtitle{
+        color: $quaternary-text-color;
+        margin-top: 120px;
+        &:hover{
+            font-size: 35px;
+            letter-spacing: 15px;
+        }
+    }
+    &__title{
+        font-size: 58px;
+        &:hover{
+            font-size: 65px;
+            letter-spacing: 15px;
+        }
+    }
+    
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 60px auto;
+        height: 521px;
+    }
+    &__img{
+        width: 500px;
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotate(45deg);
+        }
+    }
+
+    &__text{
+        width: 463px;
+        line-height: 1.2;
+    }
+    &__text-one{
+        line-height: 28.16px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    &__text-two{
+        line-height: 27.16px;
+        font-weight: 500;
+        color: $tertiary-text-color;
+    }
+    .text-three{
+        display: block;
+        margin-top: 34px;
+        
+    }
+    &__button{
+        
+    width: 176px;
+    text-align: center;
+    margin-top: 40px;
+    /* margin: auto; */
+    color: $title-text-color;
+    display: inline-block;
+    font-weight: 700;
+    
+    &:hover{
+        font-size: 20px;
+    }
+    }
+}
+
+.numbers{
+    width: 1200px;
+    margin: 0 auto;
+    &__icons{
+        display: flex;
+        align-items: center;
+    }
+  
+      
+      /* Aplica la animación a la clase .rotate */
+      
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    &__card{
+        max-width: 288px; 
+    }
+    @keyframes rotate365 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(365deg);
+        }
+      }
+      
+      /* Aplica la animación a la clase .rotate cuando el cursor esté sobre .numbers__cards */
+      &__cards:hover .numbers__card {
+        animation: rotate365 2s infinite;
+      }
+    
+    
+    &__img{
+        width: 33px;
+    }
+    &__img {
+        animation: roll 2.5s infinite;
+      }
+      
+      @keyframes roll {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+    &__number{
+        text-align: initial;
+        font-size: 58px;
+    }
+    &__text{
+        font-weight: 700;
+    }
+}
+
+
