@@ -38,7 +38,7 @@ footer {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
- text-align: left;
+    text-align: left;
   }
 
   .redes {
@@ -53,11 +53,11 @@ footer {
     right: 20px;
     margin-top: 40px;
   }
-
+s
  .redes_red {
-color: currentColor;
+fill: red;
     &:hover {
-      fill: red;
+      fill: blue;
     }
   }
 
@@ -82,7 +82,7 @@ color: currentColor;
     }
 
     .contact_number {
-      color:blue;
+      color: #d41443;
       margin-left: 3px;
     }
   }
