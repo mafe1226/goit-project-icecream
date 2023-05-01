@@ -49,3 +49,13 @@ a {
 ​.section {
   padding: 60px 16px;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 498px) {
+  .container {
+    width: 480px;
+  }
+}
