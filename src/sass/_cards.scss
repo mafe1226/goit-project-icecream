@@ -1,32 +1,21 @@
 @import './common';
 @import './utils/varibles';
-
+.cards {
+  background: $secondary-bg-color;
+  padding: 60px 16px;
+}
 .section-cards {
   display: flex;
-  background: #fff5f6;
   gap: 32px;
   justify-content: center;
   align-items: center;
-  height: 877px;
-  padding-left: 350px;
+  margin-bottom: 60px;
 }
-.section-coffe {
+.section-cards--type {
   width: 368px;
   height: 538px;
   border-radius: 24px;
-  background-color: $secondary-text-color;
-}
-.section-foodtruck {
-  width: 368px;
-  height: 538px;
-  border-radius: 24px;
-  background-color: $secondary-text-color;
-}
-.section-coffe2 {
-  width: 368px;
-  height: 538px;
-  border-radius: 24px;
-  background-color: $secondary-text-color;
+  background-color: #ffffff;
 }
 
 .title-cards {
@@ -112,8 +101,12 @@
   padding: 0;
   margin: 20px auto 0 auto;
 }
+.button__card {
+  display: flex;
+  justify-content: center;
+  gap: 14.5px;
+}
 .locations {
-  position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -123,21 +116,13 @@
   font-size: 16px;
   line-height: 21px;
   padding-top: 10px;
-  left: 0px;
-  top: 1100px;
-  left: 630px;
   color: $secondary-bg-color;
   width: 198px;
   height: 44px;
   border-radius: 22px;
   background-color: $title-text-color;
 }
-
-.icon-house {
-  fill: black;
-}
 .Franchise {
-  position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -148,9 +133,6 @@
   line-height: 21px;
   display: flex;
   padding-top: 8px;
-  left: 0px;
-  top: 1100px;
-  left: 850px;
   color: $title-text-color;
   width: 168px;
   height: 44px;
