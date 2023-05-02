@@ -139,6 +139,12 @@
       gap: 8px;
     }
   }
+  @media (max-width: 498px) {
+    .header__button {
+      position: relative;
+      z-index: 6;
+    }
+  }
   .container__text {
     position: relative;
     z-index: 2;
@@ -303,7 +309,7 @@
       width: 346px;
       height: 344px;
       top: 57px;
-      left: 195px;
+      left: 133px;
       z-index: 0;
     }
   }
@@ -357,14 +363,14 @@
       height: 420px;
       position: absolute;
       top: 65px;
-      left: 358px;
+      left: 360px;
     }
   }
   @media (max-width: 498px) {
     .header__cream {
       width: 171px;
       height: 410px;
-      left: 235px;
+      left: 200px;
       top: 78px;
       z-index: 0;
     }
@@ -424,85 +430,111 @@
     fill: rgba(256, 256, 256, 0.5);
   }
 }
+@media (max-width: 780px) {
+  .header__circles {
+    width: 750px;
+  }
+}
+@media (max-width: 498px) {
+  .header__circles {
+    width: 480px;
+  }
+}
 .header__circle {
   .header__circle__one {
     position: absolute;
+    z-index: 0;
     left: 0px;
     animation: animarcircles 7s linear 1200ms infinite;
   }
   .header__circle__two {
     position: absolute;
+    z-index: 0;
     left: 130px;
     animation: animarcircles 9s linear 1200ms infinite;
   }
   .header__circle__three {
     position: absolute;
+    z-index: 0;
     left: 180px;
     animation: animarcircles 6s linear 1200ms infinite;
   }
   .header__circle__four {
     position: absolute;
+    z-index: 0;
     left: 220px;
     animation: animarcircles 8s linear 1200ms infinite;
   }
   .header__circle__five {
     position: absolute;
     left: 360px;
+    z-index: 0;
     animation: animarcircles 7s linear 1200ms infinite;
   }
   .header__circle__six {
     position: absolute;
     left: 400px;
+    z-index: 0;
     animation: animarcircles 8s linear 1200ms infinite;
   }
   .header__circle__seven {
     position: absolute;
     left: 600px;
+    z-index: 0;
     animation: animarcircles 6s linear 1200ms infinite;
   }
   .header__circle__eight {
     position: absolute;
     left: 690px;
+    z-index: 0;
     animation: animarcircles 7s linear 1200ms infinite;
   }
   .header__circle__nine {
     position: absolute;
     left: 740px;
+    z-index: 0;
     animation: animarcircles 8s linear 1200ms infinite;
   }
   .header__circle__ten {
     position: absolute;
     left: 900px;
+    z-index: 0;
     animation: animarcircles 6s linear 1200ms infinite;
   }
   .header__circle__eleven {
     position: absolute;
     left: 1000px;
+    z-index: 0;
     animation: animarcircles 7s linear 1200ms infinite;
   }
   .header__circle__twelve {
     position: absolute;
     left: 1090px;
+    z-index: 0;
     animation: animarcircles 9s linear 1200ms infinite;
   }
   .header__circle__thirteen {
     position: absolute;
     left: 1140px;
+    z-index: 0;
     animation: animarcircles 8s linear 1200ms infinite;
   }
   .header__circle__fourteen {
     position: absolute;
     left: 750px;
+    z-index: 0;
     animation: animarcircles 12s linear 1200ms infinite;
   }
   .header__circle__fifteen {
     position: absolute;
     left: 1000px;
+    z-index: 0;
     animation: animarcircles 12s linear 1200ms infinite;
   }
   .header__circle__sixteen {
     position: absolute;
     left: 250px;
+    z-index: 0;
     animation: animarcircles 12s linear 1200ms infinite;
   }
 }
@@ -577,31 +609,43 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: $secondary-text-color;
+}
+.button__menu {
+  color: $accent-color;
+  width: 209px;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  border-color: transparent;
+  transition: letter-spacing 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__menu:hover {
+  background-color: #ecebeb;
 }
 .mobile__menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: $secondary-text-color;
   font-size: 16px;
   font-weight: 700;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile__menu .link:hover {
-  color: #d41443;
+  color: $accent-color;
 }
 .js-close-menu {
-  fill: white;
+  fill: $secondary-text-color;
 }
 .js-close-menu:hover {
-  fill: #d41443;
+  fill: $accent-color;
 }
 .js-open-menu {
-  fill: #ffffff;
+  fill: $secondary-text-color;
   padding-left: 300px;
 }
 .js-open-menu:hover {
-  color: #d41342;
+  color: $accent-color;
 }
 @media (max-width: 498px) {
   .js-open-menu {

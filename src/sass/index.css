@@ -87,6 +87,12 @@ a {
   padding-bottom: 0px;
 }
 
+.seccion {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+
 @keyframes fondo {
   0% {
     background-color: #ffb8ca;
@@ -196,6 +202,12 @@ a {
 @media (max-width: 768px) {
   .header__main .header__button {
     gap: 8px;
+  }
+}
+@media (max-width: 498px) {
+  .header__main .header__button {
+    position: relative;
+    z-index: 6;
   }
 }
 .header__main .container__text {
@@ -353,7 +365,7 @@ a {
     width: 346px;
     height: 344px;
     top: 57px;
-    left: 195px;
+    left: 133px;
     z-index: 0;
   }
 }
@@ -407,14 +419,14 @@ a {
     height: 420px;
     position: absolute;
     top: 65px;
-    left: 358px;
+    left: 360px;
   }
 }
 @media (max-width: 498px) {
   .header__generics .header__cream {
     width: 171px;
     height: 410px;
-    left: 235px;
+    left: 200px;
     top: 78px;
     z-index: 0;
   }
@@ -462,100 +474,127 @@ a {
 }
 
 .header__circles {
-  width: 100%;
-  height: 40px;
   position: absolute;
-  bottom: 120px;
+  top: 0px;
+  width: 1200px;
+  height: 640px;
+  overflow: hidden;
   z-index: 0;
 }
 .header__circles .header__circle {
   fill: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 780px) {
+  .header__circles {
+    width: 750px;
+  }
+}
+@media (max-width: 498px) {
+  .header__circles {
+    width: 480px;
+  }
+}
 .header__circle .header__circle__one {
   position: absolute;
+  z-index: 0;
   left: 0px;
-  animation: animarcircles 6s linear 1200ms infinite;
+  animation: animarcircles 7s linear 1200ms infinite;
 }
 .header__circle .header__circle__two {
   position: absolute;
+  z-index: 0;
   left: 130px;
-  animation: animarcircles 8s linear 1200ms infinite;
+  animation: animarcircles 9s linear 1200ms infinite;
 }
 .header__circle .header__circle__three {
   position: absolute;
+  z-index: 0;
   left: 180px;
-  animation: animarcircles 5s linear 1200ms infinite;
+  animation: animarcircles 6s linear 1200ms infinite;
 }
 .header__circle .header__circle__four {
   position: absolute;
+  z-index: 0;
   left: 220px;
-  animation: animarcircles 7s linear 1200ms infinite;
+  animation: animarcircles 8s linear 1200ms infinite;
 }
 .header__circle .header__circle__five {
   position: absolute;
   left: 360px;
-  animation: animarcircles 6s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 7s linear 1200ms infinite;
 }
 .header__circle .header__circle__six {
   position: absolute;
   left: 400px;
-  animation: animarcircles 7s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 8s linear 1200ms infinite;
 }
 .header__circle .header__circle__seven {
   position: absolute;
   left: 600px;
-  animation: animarcircles 5s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 6s linear 1200ms infinite;
 }
 .header__circle .header__circle__eight {
   position: absolute;
   left: 690px;
-  animation: animarcircles 6s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 7s linear 1200ms infinite;
 }
 .header__circle .header__circle__nine {
   position: absolute;
   left: 740px;
-  animation: animarcircles 7s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 8s linear 1200ms infinite;
 }
 .header__circle .header__circle__ten {
   position: absolute;
   left: 900px;
-  animation: animarcircles 5s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 6s linear 1200ms infinite;
 }
 .header__circle .header__circle__eleven {
   position: absolute;
   left: 1000px;
-  animation: animarcircles 6s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 7s linear 1200ms infinite;
 }
 .header__circle .header__circle__twelve {
   position: absolute;
   left: 1090px;
-  animation: animarcircles 8s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 9s linear 1200ms infinite;
 }
 .header__circle .header__circle__thirteen {
   position: absolute;
   left: 1140px;
-  animation: animarcircles 7s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 8s linear 1200ms infinite;
 }
 .header__circle .header__circle__fourteen {
   position: absolute;
   left: 750px;
-  animation: animarcircles 11s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 12s linear 1200ms infinite;
 }
 .header__circle .header__circle__fifteen {
   position: absolute;
   left: 1000px;
-  animation: animarcircles 11s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 12s linear 1200ms infinite;
 }
 .header__circle .header__circle__sixteen {
   position: absolute;
   left: 250px;
-  animation: animarcircles 11s linear 1200ms infinite;
+  z-index: 0;
+  animation: animarcircles 12s linear 1200ms infinite;
 }
 
 @keyframes animarcircles {
   0% {
-    transform: translateY(200px);
+    transform: translateY(640px);
   }
   20% {
     margin-left: 40px;
@@ -564,7 +603,7 @@ a {
     margin-right: 90px;
   }
   100% {
-    transform: translateY(-700px);
+    transform: translateY(-680px);
   }
 }
 .menu-toggle {
@@ -625,28 +664,42 @@ a {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: #ffffff;
+}
+
+.button__menu {
+  color: #d41342;
+  width: 209px;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  border-color: transparent;
+  transition: letter-spacing 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__menu:hover {
+  background-color: #ecebeb;
 }
 
 .mobile__menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile__menu .link:hover {
-  color: #d41443;
+  color: #d41342;
 }
 
 .js-close-menu {
-  fill: white;
+  fill: #ffffff;
 }
 
 .js-close-menu:hover {
-  fill: #d41443;
+  fill: #d41342;
 }
 
 .js-open-menu {
