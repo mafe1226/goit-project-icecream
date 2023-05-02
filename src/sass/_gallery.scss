@@ -1,10 +1,20 @@
 .gallery {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 245, 246, 1) 0,
-    rgba(255, 245, 246, 1) 160px,
-    rgba(255, 255, 255, 1) 160px
-  );
+  @media screen and (max-width: 767px) {
+    background: linear-gradient(
+      180deg,
+      $secondary-bg-color 0,
+      $secondary-bg-color 60px,
+      $primary-bg-color 60px
+    );
+  }
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      180deg,
+      $secondary-bg-color 0,
+      $secondary-bg-color 160px,
+      $primary-bg-color 160px
+    );
+  }
 }
 
 .gallery__grid {
