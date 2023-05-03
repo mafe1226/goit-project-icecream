@@ -174,4 +174,43 @@ header {
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   text-align: right;
+}
+
+.tradition {
+  background-image: url("../images/sectionbg1.png");
+  height: 521px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tradition__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tradition__img {
+  width: 500px;
+}
+.tradition__text {
+  width: 463px;
+  line-height: 1.2;
+}
+.tradition__text-one {
+  line-height: 28.16px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.tradition__text-two, .tradition .text-three {
+  line-height: 27.16px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.tradition .text-three {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.sedes {
+  background-color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
