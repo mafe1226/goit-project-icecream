@@ -278,7 +278,7 @@
     color: rgba(255, 165, 186, 1);
     position: absolute;
     top: 54px;
-    left: 500px;
+    left: 770px;
     z-index: 1;
   }
   @media (max-width: 768px) {
@@ -339,7 +339,7 @@
     height: 514px;
     position: absolute;
     top: 80px;
-    left: 620px;
+    left: 890px;
     background-color: transparent;
     z-index: 1;
   }
@@ -627,6 +627,7 @@
 .js-open-menu {
   fill: $secondary-text-color;
   padding-left: 300px;
+  z-index: 30;
 }
 .js-open-menu:hover {
   color: $accent-color;

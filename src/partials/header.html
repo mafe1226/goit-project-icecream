@@ -71,7 +71,23 @@
         </ul>
         <ul class="container__text">
           <li>
-            <img src="./images/milk.png" alt="milk" class="header__milk" />
+            <picture>
+              <source
+                media="(min-width:1200px )"
+                srcset="
+                  ./images/milkdeskop.png   1x,
+                  ./images/milkdeskopx2.png 2x
+                "
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ./images/milktablet.png   1x,
+                  ./images/milktabletx2.png 2x
+                "
+              />
+              <img src="./images/milk.png" alt="milk" class="header__milk" />
+            </picture>
           </li>
           <li>
             <p class="header__text">
@@ -109,10 +125,30 @@
         </svg>
       </li>
       <li>
+        <source
+          media="(min-width:1200px )"
+          srcset="./images/creamdeskop.jpg 1x, ./images/creamdeskopx2.png 2x"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="./images/creamtablet.jpg 1x, ./images/creamtabletx2.jpg 2x"
+        />
+        <source
+          media="(min-width:480px )"
+          srcset="./images/creamcel.png 1x, ./images/creamcelx2.jpg 2x"
+        />
         <img src="./images/cream.png" alt="cream" class="header__cream" />
       </li>
       <li>
-        <img src="./images/women-cream.png" alt="women" class="header__woman" />
+        <source
+          media="(min-width:1200px )"
+          srcset="./images/womendeskop.jpg 1x, ./images/womendeskopx2.png 2x"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="./images/womantablet.jpg 1x, ./images/milktabletx2.png 2x"
+        />
+        <img src="./images/women.png" alt="women" class="header__woman" />
       </li>
       <li>
         <img src="./images/arrow.png" alt="arrow" class="header__arrow" />
