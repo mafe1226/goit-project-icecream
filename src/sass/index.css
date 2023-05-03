@@ -699,7 +699,6 @@ a {
 .js-open-menu {
   fill: #ffffff;
   padding-left: 300px;
-  z-index: 30;
 }
 
 .js-open-menu:hover {
