@@ -1,1 +1,51 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+​body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $primary-text-color;
+}
+​h1,
+h2,
+h3 {
+  font-family: 'Titan One', cursive;
+  color: $title-text-color;
+  font-weight: 400;
+  text-align: center;
+}
+​body h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 58px;
+}
+​body h2 {
+  font-size: 50px;
+}
+​body h3 {
+  font-size: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+​.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+​.section {
+  padding: 60px 16px;
+}
