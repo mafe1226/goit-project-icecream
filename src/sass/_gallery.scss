@@ -19,7 +19,6 @@
 
 .gallery__grid {
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(9, 1fr);
@@ -30,7 +29,7 @@
     height: 136px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 728px;
     height: 327px;
   }
   @media screen and (min-width: 1200px) {
