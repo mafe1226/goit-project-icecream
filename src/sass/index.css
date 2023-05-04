@@ -114,19 +114,19 @@ a {
     background-color: #a33752;
   }
 }
+@media (max-width: 768px) {
+  .header__nav .header__menu {
+    display: none;
+    position: relative;
+    z-index: 2;
+  }
+}
 @media (max-width: 1280px) {
   .header__nav .header__menu {
     width: 540px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 2;
-  }
-}
-@media (max-width: 768px) {
-  .header__nav .header__menu {
-    display: none;
-    position: relative;
     z-index: 2;
   }
 }
@@ -138,7 +138,6 @@ a {
   position: relative;
   display: flex;
   z-index: 2;
-  display: flex;
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
