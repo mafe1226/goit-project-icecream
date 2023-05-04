@@ -52,6 +52,7 @@
   }
   .header__menu--item {
     position: relative;
+    display: flex;
     z-index: 2;
     display: flex;
     font-weight: 700;
@@ -61,7 +62,11 @@
     &:hover {
       color: $title-text-color;
     }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
+
   @media (max-width: 767px) {
     .header__menu--button {
       display: none;
@@ -436,7 +441,7 @@
       width: 236px;
       height: 554px;
       position: absolute;
-      top: 119px;
+      top: 150px;
       left: 632px;
       background-color: transparent;
       z-index: 1;
@@ -492,7 +497,7 @@
       z-index: 2;
       width: 26px;
       height: 26px;
-      top: 577px;
+      top: 618px;
       left: 273px;
       position: absolute;
       animation: fondo;
@@ -514,7 +519,7 @@
 @media (min-width: 1280px) {
   .header__circles {
     top: 0px;
-    width: 1258px;
+    width: 100%;
     height: 677px;
   }
 }
