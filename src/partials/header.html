@@ -1,5 +1,5 @@
-<header>
-  <div class="header container">
+<header id="header">
+  <div class="header">
     <section class="header__nav">
       <ul class="header__logo">
         <li class="header__logo--item">
@@ -13,19 +13,19 @@
       </ul>
       <ul class="header__menu">
         <li class="header__menu--item">
-          <a href="#">Home</a>
+          <a href="#header">Home</a>
         </li>
         <li class="header__menu--item">
-          <a href="#">About us</a>
+          <a href="#gallery">About us</a>
         </li>
         <li class="header__menu--item">
-          <a href="#">How it’s made?</a>
+          <a href="#howitsmade">How it’s made?</a>
         </li>
         <li class="header__menu--item">
-          <a href="#">Our products</a>
+          <a href="#Products">Our products</a>
         </li>
         <li class="header__menu--item">
-          <a href="#">Contact</a>
+          <a href="#footer">Contact</a>
         </li>
       </ul>
       <button
@@ -52,21 +52,25 @@
         </li>
       </ul>
     </section>
-    <section class="header__main">
+    <section class="header__main section">
       <div>
         <h1 class="header__tittle">
           ice cream made with <span class="header__tittle--pink">passion</span>
         </h1>
         <ul class="header__button">
           <li>
-            <button class="header__tittle--button header__button--pink">
-              Products
-            </button>
+            <a href="#Products">
+              <button class="header__tittle--button header__button--pink">
+                Products
+              </button>
+            </a>
           </li>
           <li>
-            <button class="header__tittle--button header__button--gray">
-              How it’s made?
-            </button>
+            <a href="#howitsmade">
+              <button class="header__tittle--button header__button--gray">
+                How it’s made?
+              </button></a
+            >
           </li>
         </ul>
         <ul class="container__text">
@@ -128,15 +132,15 @@
         <picture>
           <source
             media="(min-width:1200px )"
-            srcset="./images/creamdeskop.jpg 1x, ./images/creamdeskopx2.png 2x"
+            srcset="./images/creamdeskop.png 1x, ./images/creamdeskopx2.png 2x"
           />
           <source
             media="(min-width:768px )"
-            srcset="./images/creamtablet.jpg 1x, ./images/creamtabletx2.jpg 2x"
+            srcset="./images/creamtablet.png 1x, ./images/creamtablet2x.png 2x"
           />
           <source
             media="(min-width:480px )"
-            srcset="./images/creamcel.png 1x, ./images/creamcelx2.jpg 2x"
+            srcset="./images/creamcel.png 1x, ./images/creamcel2x.png 2x"
           />
           <img src="./images/cream.png" alt="cream" class="header__cream" />
         </picture>
@@ -144,12 +148,15 @@
       <li>
         <picture>
           <source
-            media="(min-width:1200px )"
-            srcset="./images/womendeskop.jpg 1x, ./images/womendeskopx2.png 2x"
+            media="(min-width:1200px)"
+            srcset="./images/womendeskop.png 1x, ./images/womendeskopx2.png 2x"
           />
           <source
             media="(min-width:768px )"
-            srcset="./images/womantablet.jpg 1x, ./images/milktabletx2.png 2x"
+            srcset="
+              ./images/womentabletx1.png 1x,
+              ./images/womentabletx2.png 2x
+            "
           />
           <img src="./images/women.png" alt="women" class="header__woman" />
         </picture>
@@ -258,12 +265,12 @@
       </svg>
     </button>
     <ul class="mobile__menu">
-      <li><button class="link button__menu">Buy now ></button></li>
-      <li><a href="#" class="link">Home</a></li>
-      <li><a href="#" class="link">About us</a></li>
-      <li><a href="#" class="link">How it’s made?</a></li>
-      <li><a href="#" class="link">Our products</a></li>
-      <li><a href="#" class="link">Contact</a></li>
+      <li><button class="button__menu">Buy now ></button></li>
+      <li><a href="#header" class="link">Home</a></li>
+      <li><a href="#reviews" class="link">About us</a></li>
+      <li><a href="#howitsmade" class="link">How it’s made?</a></li>
+      <li><a href="#Products" class="link">Our products</a></li>
+      <li><a href="#footer" class="link">Contact</a></li>
     </ul>
   </div>
 </header>
