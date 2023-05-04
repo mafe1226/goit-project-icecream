@@ -1,44 +1,276 @@
-<header>
-  <div class="container">
-    <ul class="header__menu">
-      <li class="header__menu--item">
-        <svg width="199" height="50">
-          <use href="./images/icons.svg#icecream-logo" class="header__menu--logo"></use>
+<header id="header">
+  <div class="header">
+    <section class="header__nav">
+      <ul class="header__logo">
+        <li class="header__logo--item">
+          <svg width="199" height="50">
+            <use
+              href="./images/icons.svg#icecream-logo"
+              class="header__menu--logo"
+            ></use>
+          </svg>
+        </li>
+      </ul>
+      <ul class="header__menu">
+        <li class="header__menu--item">
+          <a href="#header">Home</a>
+        </li>
+        <li class="header__menu--item">
+          <a href="#gallery">About us</a>
+        </li>
+        <li class="header__menu--item">
+          <a href="#howitsmade">How it’s made?</a>
+        </li>
+        <li class="header__menu--item">
+          <a href="#Products">Our products</a>
+        </li>
+        <li class="header__menu--item">
+          <a href="#footer">Contact</a>
+        </li>
+      </ul>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul>
+        <li class="header__button">
+          <button class="header__menu--button">Buy now ></button>
+        </li>
+      </ul>
+    </section>
+    <section class="header__main section">
+      <div>
+        <h1 class="header__tittle">
+          ice cream made with <span class="header__tittle--pink">passion</span>
+        </h1>
+        <ul class="header__button">
+          <li>
+            <a href="#Products">
+              <button class="header__tittle--button header__button--pink">
+                Products
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#howitsmade">
+              <button class="header__tittle--button header__button--gray">
+                How it’s made?
+              </button></a
+            >
+          </li>
+        </ul>
+        <ul class="container__text">
+          <li>
+            <picture>
+              <source
+                media="(min-width:1200px )"
+                srcset="
+                  ./images/milkdeskop.png   1x,
+                  ./images/milkdeskopx2.png 2x
+                "
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ./images/milktablet.png   1x,
+                  ./images/milktabletx2.png 2x
+                "
+              />
+              <img src="./images/milk.png" alt="milk" class="header__milk" />
+            </picture>
+          </li>
+          <li>
+            <p class="header__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod temporincididunt ut labore et
+            </p>
+          </li>
+        </ul>
+      </div>
+      <ul class="header__main__items">
+        <li class="header__item">
+          <h2 class="header__number">16</h2>
+          <p class="header__span">cafes</p>
+        </li>
+        <li class="header__item">
+          <h2 class="header__number">23</h2>
+          <p class="header__span">food trucks</p>
+        </li>
+      </ul>
+    </section>
+    <ul class="header__generics">
+      <li>
+        <svg class="header__circle__pink" width="534" height="534">
+          <use href="./images/header.svg#icon-circle-pink"></use>
         </svg>
       </li>
-      <li class="header__menu--item">
-        <a href="#">Home</a>
+      <li>
+        <svg class="header__circle__first" width="30" height="30">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
       </li>
-      <li class="header__menu--item">
-        <a href="#">About us</a>
+      <li>
+        <svg class="header__circle__second" width="30" height="30">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
       </li>
-      <li class="header__menu--item">
-        <a href="#">How it’s made?</a>
+      <li>
+        <picture>
+          <source
+            media="(min-width:1200px )"
+            srcset="./images/creamdeskop.png 1x, ./images/creamdeskopx2.png 2x"
+          />
+          <source
+            media="(min-width:768px )"
+            srcset="./images/creamtablet.png 1x, ./images/creamtablet2x.png 2x"
+          />
+          <source
+            media="(min-width:480px )"
+            srcset="./images/creamcel.png 1x, ./images/creamcel2x.png 2x"
+          />
+          <img src="./images/cream.png" alt="cream" class="header__cream" />
+        </picture>
       </li>
-      <li class="header__menu--item">
-        <a href="#">Our products</a>
+      <li>
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="./images/womendeskop.png 1x, ./images/womendeskopx2.png 2x"
+          />
+          <source
+            media="(min-width:768px )"
+            srcset="
+              ./images/womentabletx1.png 1x,
+              ./images/womentabletx2.png 2x
+            "
+          />
+          <img src="./images/women.png" alt="women" class="header__woman" />
+        </picture>
       </li>
-      <li class="header__menu--item">
-        <a href="#">Contact</a>
-      </li>
-      <li class="header__menu--item">
-        <button class="header__menu--button">Buy now ></button>
+      <li>
+        <img src="./images/arrow.png" alt="arrow" class="header__arrow" />
       </li>
     </ul>
-    <h1 class="header__tittle">
-      ice cream made with <span class="header__tittle--pink">passion</span>
-    </h1>
-    <ul class="header__button">
-      <li>
-        <button class="header__tittle--button header__button--pink">
-          Products
-        </button>
+    <ul class="header__circles">
+      <li class="header__circle">
+        <svg class="header__circle__one">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
       </li>
-      <li>
-        <button class="header__tittle--button header__button--gray">
-          How it’s made?
-        </button>
+      <li class="header__circle">
+        <svg class="header__circle__two" width="80" height="80">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
       </li>
+      <li class="header__circle">
+        <svg class="header__circle__three" width="140" height="140">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__four" width="80" height="80">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__five" width="120" height="120">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__six" width="180" height="180">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__seven" width="140" height="140">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__eight" width="100" height="100">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__nine" width="140" height="140">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__ten" width="100" height="100">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__eleven" width="140" height="140">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__twelve" width="100" height="100">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__thirteen" width="140" height="140">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__fourteen" width="160" height="160">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__fifteen" width="180" height="180">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+      <li class="header__circle">
+        <svg class="header__circle__sixteen" width="140" height="140">
+          <use href="./images/header.svg#icon-circle-white"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        class="icon__close"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <ul class="mobile__menu">
+      <li><button class="button__menu">Buy now ></button></li>
+      <li><a href="#header" class="link">Home</a></li>
+      <li><a href="#reviews" class="link">About us</a></li>
+      <li><a href="#howitsmade" class="link">How it’s made?</a></li>
+      <li><a href="#Products" class="link">Our products</a></li>
+      <li><a href="#footer" class="link">Contact</a></li>
     </ul>
   </div>
 </header>
